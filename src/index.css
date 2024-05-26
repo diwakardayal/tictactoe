@@ -1,0 +1,43 @@
+/** @format */
+body {
+  font-family: sans-serif;
+}
+
+.game {
+  max-width: calc(3 * 100px);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:2rem
+}
+
+.reset-button {
+  padding: 1rem 2rem;
+  font-size: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: 2px solid grey;
+  font-size: 36px;
+  transition: background-color .3s ease-in-out;
+}
+
+.cell:hover {
+  background-color: #cccccc;
+}
