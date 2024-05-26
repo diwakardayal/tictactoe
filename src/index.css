@@ -14,13 +14,20 @@ body {
   font-size: 25px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap:2rem
 }
 
 .reset-button {
-  padding: 1rem 2rem;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
   font-size: 20px;
+  border-radius: 10px;
+}
+
+.reset-button:hover {
+  color: white;
+  background-color: black;
+  transition: .3s ease-in-out;
 }
 
 .board {
@@ -35,7 +42,7 @@ body {
   cursor: pointer;
   border: 2px solid grey;
   font-size: 36px;
-  transition: background-color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .cell:hover {
